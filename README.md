@@ -31,7 +31,20 @@ Once the session starts, run particles using:
 /run/beamOn 10
 ```
 
+## Results
+
+The simulation successfully replicates the angular dependence of the scattering yield. 
+
+![Rutherford Scattering Results](results.png)
+
+### Generating Plots
+A Python script is provided to automate running the simulation and plotting the results against the theoretical Rutherford formula.
+```bash
+python3 plot_results.py
+```
+
 ## Project Structure
 - `src/`, `include/`: Simulation source code (snake_case convention).
 - `run1.mac`: Macro for high-statistics run.
 - `init_vis.mac`, `vis.mac`: Visualization configuration.
+- `plot_results.py`: Data analysis and plotting script.
